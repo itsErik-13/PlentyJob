@@ -114,7 +114,8 @@ function Search() {
         setScreenshot(null)
 
         try {
-            const API_URL = `http://${window.location.hostname}:8000/jobs/start`
+            const BASE_URL = import.meta.env.VITE_API_URL || `http://${window.location.hostname}:8000`
+            const API_URL = `${BASE_URL}/jobs/start`
             const response = await fetch(API_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
