@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+selenium
+webdriver_manager
+python-dotenv
+pandas
+fastapi
+uvicorn
+pydantic
